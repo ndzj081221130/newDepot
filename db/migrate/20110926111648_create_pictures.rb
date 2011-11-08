@@ -4,7 +4,7 @@ class CreatePictures < ActiveRecord::Migration
       t.string :comment
       t.string :name
       t.string :content_type
-      t.binary :data,:limit => 1.magabyte
+      t.binary :data 
 
       t.timestamps
     end

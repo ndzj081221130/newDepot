@@ -1,5 +1,5 @@
 <div class="cart_title"> <%= t('.title') %></div>
-<table>
+<table class = "yel">
 <!-- START_HIGHLIGHT -->
   <%= render(cart.line_items) %>
 <!-- END_HIGHLIGHT -->
@@ -15,6 +15,6 @@
 
 
 <%= button_to t('.checkout') , new_order_path, :method => :get %>
-<%= button_to t('empty'), cart, :method => :delete,
+<%= button_to t('.empty'), cart, :method => :delete,
 
     :confirm => 'Are you sure?' %>

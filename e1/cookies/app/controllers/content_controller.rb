@@ -47,6 +47,7 @@ class ContentController < ApplicationController
 
   caches_page   :public_content
   caches_action :premium_content
+  
   def public_content
     @articles = Article.list_public
   end
